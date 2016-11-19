@@ -1,0 +1,380 @@
+//META{"name":"Logan's Theme","description":"A theme for social gamers","author":"Logan Skidmore","version":"version 1.0"}*//
+
+
+/*hide offline members*/
+.channel-members h2:last-of-type {
+    display: none;
+}
+
+h2[data-reactid=".0.1.1.0.2.1.1.0.0.1:$offline"]{
+    display:none;
+}
+.member-status-offline{
+    display: none;
+    visibility: hidden;
+}
+
+/*Left side bar*/
+.guild-header header{
+    width: 20%; 
+    position: fixed;
+}
+.channels-wrap{
+    width: 20%;
+}
+
+.guild-channels{
+	background-color:#E4EEF0;
+	top: 150px; 
+    width: 20%;
+}
+
+.channel-name{
+    color: black;
+}
+
+.guild-channels .channel a:hover {
+   background-color: #00AFF0; !important;
+    z-index: 5;
+    
+}
+
+.guild-channels .channel-text a{
+	color: black; !important;
+    opacity: 1; !important;
+}
+
+.guild-channels .channel-voice.audio .channel-arrow,
+.guild-channels .channel-voice.audio .icon-lock,
+.guild-channels .channel-voice .channel-arrow{
+ 	display: none;   
+    
+}
+
+.guild-channels .channel-text.selected a{
+    color: black;
+    background-color:#00AFF0;
+    
+}
+
+/*THIS IS THE HOVER OF VOICE CHANNELS*/
+.guild-channels .channel-voice a:hover{
+    color: black;
+    background-color: #00AFF0;
+    background-image: url(https://lh3.googleusercontent.com/jM2ifu7dqlzKSK3s5UWXaBmCSQb4HzOtAqAB8Rkt31qsdn1hcqZIdhOm3ZAaGlnK5u-YBELz);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    height: 35px;
+    background-position: right;
+    
+}
+
+.guild-channels .channel-voice a{
+    background-image: url(https://lh3.googleusercontent.com/jM2ifu7dqlzKSK3s5UWXaBmCSQb4HzOtAqAB8Rkt31qsdn1hcqZIdhOm3ZAaGlnK5u-YBELz);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    height: 35px;
+    background-position: right;
+}
+
+.guild-channels header {
+   color: black; !important;
+   font-size: 15px;
+   text-transform: none;
+   font-weight: bold;
+   opacity: 1;
+}
+
+
+
+.guild-channels .channel-voice-states li .avatar-small{
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    
+}
+
+.avatar-xxlarge {
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.4);
+}
+/*voice connection*/
+#voice-connection {
+    background: #E4EEf2; !important;
+    position: absolute; !important;
+    top: 100px;
+    z-index: 4;
+    width: 20%;
+    padding: 0;
+    border-top: none;    
+}
+
+#voice-connection .voice-connection-status{
+    padding-left: 20px;
+}
+/*What channel you're connected to*/
+#voice-connection .voice-connection-channel{
+ 	color: black;
+    font-weight: bold;
+    opacity: 1;
+    padding-left: 5px;
+}
+
+.btn-info{
+ 	display: none;
+}
+#voice-connection .btn-group{
+	border: none;
+}
+#voice-connection .btn{
+ 	position:fixed;
+    left: 60%;
+    top: 25%;
+}
+
+#voice-connection .btn-disconnect:after {
+    background-image: url(https://lh3.googleusercontent.com/RA2TYPdwn1Rckr41wfHlIMtNQd_ruRVPrxrObhr5b5mNtUDvVg5QKOmhUBwbJq4RQg=w170); !important;
+    opacity: .2;
+    background-size: 30px 30px;
+}
+
+.account .btn-deafen, .account .btn-mute{
+ 	border: none;  
+}
+
+.account .btn-deafen{
+    left:55%; 
+    top: 25%;
+    border: 0; !important;
+}
+
+.account .btn-mute{
+    left: 50%; 
+    top: 25%;
+}
+
+.account .btn-settings{
+    top: 100px; !importnat;
+    left: 10%;
+    z-index: 1;
+
+}
+.account .btn {
+ 	background: black; 
+    position: fixed;
+    
+    
+}
+
+.account .btn-group {
+ border: none;   
+}
+
+
+
+/*Account display and stuff*/
+.account{
+    background: #E4EEf2;
+    color: black;
+    z-index: 2;
+    order: 2;
+    height: 150px;
+    position: absolute;
+    width: 20%;
+    padding: 0;
+    
+}
+.account .avatar-small{
+ margin: 10px;   
+}
+
+/*Creates the chat bubbles*/
+.message-group .avatar-large { 
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 0px;
+}
+
+.message-group .comment{
+ 	background: #6FD2E5;
+    border-radius: 10px;
+    padding: 10px;
+}
+.message-group h2 .timestamp{
+  color: black; !important;
+  opacity: 1;
+}
+.chat .welcome-message{
+ 	display: none;
+}
+.chat>.title-wrap{
+    position: fixed;
+    top: 30%; !important;
+    left: 20%;
+    width: 75%; !important;
+    height: 5%; !important;
+    z-index: 1;
+}
+
+.chat .messages{
+    position: fixed;
+    top: 35%;
+    left: 20%;
+    width: 75%;
+    height: 55%;    
+}
+
+.chat form{
+    position: fixed;
+	left: 20%;
+    margin: 0;
+    z-index: 1;
+    top: 90%;
+    width: 74%;
+}
+
+.channel-textarea-upload{
+    display: none;
+}
+/*the phone call*/
+.guild-channels .channel-voice-states{
+    text-align: center;
+    position: fixed;
+    top: 9px;
+    left: 20%;
+    z-index: 1;
+    background: black;
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    flexdirection: column;
+    background-color: #161819;
+    background-image: url(/assets/fa4d05fd4a7ce8459a7cf997a60338e8.png);
+    -webkit-box-shadow: inset 0 -4px 10px 0 rgba(0,0,0,.2);
+    box-shadow: inset 0 -4px 10px 0 rgba(0,0,0,.2);
+    width: 75%;
+    height:30%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    box-sizing: border-box;
+}
+
+.guild-channels .icon-muted{
+    display: none; !important;   
+    
+}
+
+.guild-channels .icon-deafened{
+    display: none; !important;      
+}
+.draggable span{
+	display:none;    
+}
+
+ul.channel-voice-states {
+ 	display: inline; !important;
+ 	float: left; !important;
+    width: 75%;
+}
+li{
+ 	float: left;
+    margin: auto;
+      
+}
+.draggable {
+    display: block;
+    padding: 50px;
+    margin-right: 5px;
+}
+
+.header-toolbar button {
+    display: none;
+    cursor: default;
+}
+
+
+.tooltips {
+	visibility: hidden;
+}
+.channel-members{
+ 	display: none;   
+}
+
+
+
+/*title bar #212121*/
+.titlebar{
+    background:#212121;
+    height:35px!important;
+}
+
+.titlebar:after{
+    content:"Discord";
+    position:absolute;
+    top:9px;
+    left:40px;
+    font-weight:600;
+    color:#fff;
+    opacity:0.6
+}
+
+.titlebar:before{
+    content:url(https://discordapp.com/assets/1c8a54f25d101bdc607cec7228247a9a.svg);
+    position:absolute;
+    top:7px;
+    left:15px;
+    font-weight:600;
+    color:#fff;
+    opacity:0.6;
+    height:20px;
+    width:20px
+}
+
+.win-buttons button{
+    height:33px!important;
+    width:40px!important;
+    background-size: 23px;
+    background-repeat:no-repeat;
+}
+
+.win-buttons{
+    height:36px;
+    right:0px;
+}
+.win-buttons.win-buttons-notice{
+    top:0!important
+}
+.app{
+    margin-top:35px
+}
+.separator-win{
+    display:none
+}
+
+.guilds-wrapper{
+    order:2;
+    width: 5%;
+}
+
+.separator {
+ display: none; !important;
+}
+
+.channel-members-wrap{
+ display: none;   
+}
+
+.header-toolbar button.active{
+ 	display: none;   
+}
+
+.guild-channels .icon-instant-invite {
+ display:none; !important;  
+}
